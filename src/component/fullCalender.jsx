@@ -32,8 +32,8 @@ function FullCalender() {
     };
     useEffect(() => {
         const fetchEvents = async () => {
-            const apiKey = "AIzaSyDDkYLPOFrNpFe7TunPHi5YCR8jmCpcf2Y";
-            const calendarId = "riswana.an@techversantinfotech.com";
+            const apiKey = ""; //api key
+            const calendarId = ""; //calendar id
             const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}`;
             try {
                 const response = await fetch(url);
