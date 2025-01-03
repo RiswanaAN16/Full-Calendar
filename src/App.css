@@ -1,0 +1,137 @@
+/* Root styles */
+#root {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  min-height: 80vh;
+}
+
+
+.full-calendar-container {
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.calendar-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+.event-header {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: black;
+}
+
+.event-time{
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+  gap: 5px;
+  font-size: 16px;
+  color: green;
+}
+
+.event-time i{
+  margin-right: 4px;
+  color: #007bff;
+}
+
+.fc-day:hover {
+  background: #e3f2fd !important;
+  cursor: pointer;
+}
+
+.fc-toolbar {
+  margin-bottom: 1rem;
+}
+
+.fc-event {
+  background: #e3f2fd;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .full-calendar-container {
+    width: 95vw;
+  }
+
+  .calendar-title {
+    font-size: 1.5rem;
+  }
+}
+.google-signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.client-id-input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.client-id-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.googlebtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  /* transition: background-color 0.3s; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.googlebtn:hover {
+  background-color: #357ae8;
+}
+
+.googlebtn:active {
+  background-color: #2a65c7;
+}
+.buttonClass{
+  display: flex;
+  justify-content: space-between;
+}
